@@ -33,12 +33,12 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
-          children: [UiHelper.CustomImage(img: "splash_image.png")],
+          children: [UiHelper.customImage(img: "splash_image.png")],
         ),
       ),
     );
   }
 }
 
-//! 12:55
+//! 17:10
 //? https://www.youtube.com/watch?v=BU4jheqy7fI
