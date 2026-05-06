@@ -63,9 +63,28 @@ class LoginScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-
-                      child: Row(children: []),
+                      child: Row(
+                        mainAxisAlignment: .center,
+                        children: [
+                          UiHelper.customText(
+                            text: "Login with",
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                            fontFamily: "bold",
+                          ),
+                          SizedBox(width: 5),
+                          UiHelper.customImage(img: "zomato_img_logo.png"),
+                        ],
+                      ),
                     ),
+                  ),
+                  UiHelper.customText(
+                    text:
+                        "Access your saved addresses from Zomato automatically",
+                    color: Color(0xffc9c9c9),
+                    fontWeight: FontWeight.normal,
+                    fontSize: 10,
                   ),
                 ],
               ),
