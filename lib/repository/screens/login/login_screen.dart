@@ -79,12 +79,20 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(height: 8),
                   UiHelper.customText(
                     text:
                         "Access your saved addresses from Zomato automatically",
                     color: Color(0xffc9c9c9),
                     fontWeight: FontWeight.normal,
                     fontSize: 10,
+                  ),
+                  SizedBox(height: 15),
+                  UiHelper.customText(
+                    text: "Or login with phone number",
+                    color: Color(0xff269237),
+                    fontWeight: FontWeight.normal,
+                    fontSize: 14,
                   ),
                 ],
               ),
@@ -96,4 +104,4 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-//! 28:10
+//! 33:00
