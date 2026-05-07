@@ -105,3 +105,6 @@ class LoginScreen extends StatelessWidget {
 }
 
 //! 33:00
+
+
+//! https://www.figma.com/design/98uAUgQzbEB6M56KXpr6JA/Blinkit-UI-By-Sujal-Dave?node-id=1-301&t=PBM0iIjBeXgE9Ad1-0
