@@ -26,15 +26,16 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     "category_icon.png",
     "printer_icon.png",
   ];
-
+List<String> pageLabels
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: IndexedStack(index: currentIndex, children: pages),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           // ...[for item in items{
           for (int i = 0; i < items.length; i++)
-            BottomNavigationBarItem(icon: UiHelper.customImage(img: items[i])),
+            BottomNavigationBarItem(icon: UiHelper.customImage(img: items[i]),label: ),
           // }
           // ]
         ],
