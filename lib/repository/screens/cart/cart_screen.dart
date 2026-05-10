@@ -1,3 +1,4 @@
+import 'package:blinkit_series/repository/widgets/ui_helper.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -5,6 +6,28 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text("Cart screen")));
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              height: 100,
+              color: Color(0xfff7cb45),
+              child: Column(
+                children: [
+                  UiHelper.customText(
+                    text: "Blinkit in",
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
