@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UiHelper {
   static Image customImage({required String img}) {
-    return Image.asset("assets/images/$img",fit: BoxFit.cover,);
+    return Image.asset("assets/images/$img", fit: BoxFit.cover);
   }
 
   static Text customText({
@@ -18,8 +18,15 @@ class UiHelper {
         fontSize: fontSize,
         fontFamily: fontFamily ?? "regular",
         fontWeight: fontWeight,
-        color: color
+        color: color,
       ),
     );
+  }
+
+  static customTextField({
+    required TextEditingController controller,
+    required String text,
+  }) {
+    return Placeholder();
   }
 }
